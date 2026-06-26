@@ -1,0 +1,11 @@
+{
+	"extends": "@tsconfig/node20/tsconfig.json",
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"outDir": "com.muxshed.studio.sdPlugin/bin",
+		"rootDir": "src",
+		"sourceMap": true
+	},
+	"include": ["src/**/*"]
+}

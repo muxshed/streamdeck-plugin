@@ -1,0 +1,5 @@
+node_modules
+dist
+*.streamDeckPlugin
+.DS_Store
+com.muxshed.studio.sdPlugin/bin/

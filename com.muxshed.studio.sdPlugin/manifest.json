@@ -1,0 +1,58 @@
+{
+	"$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+	"Name": "Muxshed",
+	"Version": "1.0.0.0",
+	"Author": "Muxshed",
+	"UUID": "com.muxshed.studio",
+	"Icon": "imgs/plugin",
+	"Description": "Control a self-hosted Muxshed live production studio — go live, end the stream, bleep and toggle recording from your Stream Deck.",
+	"URL": "https://muxshed.com",
+	"CodePath": "bin/plugin.js",
+	"SDKVersion": 2,
+	"Software": { "MinimumVersion": "6.5" },
+	"OS": [
+		{ "Platform": "mac", "MinimumVersion": "12" },
+		{ "Platform": "windows", "MinimumVersion": "10" }
+	],
+	"Nodejs": { "Version": "20", "Debug": "enabled" },
+	"Category": "Muxshed",
+	"CategoryIcon": "imgs/category",
+	"Actions": [
+		{
+			"Name": "Go Live",
+			"UUID": "com.muxshed.studio.golive",
+			"Icon": "imgs/actions/golive/icon",
+			"Tooltip": "Start streaming",
+			"PropertyInspectorPath": "ui/inspector.html",
+			"Controllers": ["Keypad"],
+			"States": [{ "Image": "imgs/actions/golive/key", "TitleAlignment": "bottom" }]
+		},
+		{
+			"Name": "End Stream",
+			"UUID": "com.muxshed.studio.endstream",
+			"Icon": "imgs/actions/endstream/icon",
+			"Tooltip": "Stop streaming",
+			"PropertyInspectorPath": "ui/inspector.html",
+			"Controllers": ["Keypad"],
+			"States": [{ "Image": "imgs/actions/endstream/key", "TitleAlignment": "bottom" }]
+		},
+		{
+			"Name": "Bleep",
+			"UUID": "com.muxshed.studio.bleep",
+			"Icon": "imgs/actions/bleep/icon",
+			"Tooltip": "Trigger a broadcast-delay bleep",
+			"PropertyInspectorPath": "ui/inspector.html",
+			"Controllers": ["Keypad"],
+			"States": [{ "Image": "imgs/actions/bleep/key", "TitleAlignment": "bottom" }]
+		},
+		{
+			"Name": "Record",
+			"UUID": "com.muxshed.studio.recordtoggle",
+			"Icon": "imgs/actions/record/icon",
+			"Tooltip": "Toggle recording",
+			"PropertyInspectorPath": "ui/inspector.html",
+			"Controllers": ["Keypad"],
+			"States": [{ "Image": "imgs/actions/record/key", "TitleAlignment": "bottom" }]
+		}
+	]
+}
