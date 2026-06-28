@@ -5,7 +5,7 @@
 	"Author": "Muxshed",
 	"UUID": "com.muxshed.studio",
 	"Icon": "imgs/plugin",
-	"Description": "Control a self-hosted Muxshed live production studio — go live, end the stream, bleep and toggle recording from your Stream Deck.",
+	"Description": "Control a self-hosted Muxshed live production studio — go live, end the stream and toggle recording from your Stream Deck.",
 	"URL": "https://muxshed.com",
 	"CodePath": "bin/plugin.js",
 	"SDKVersion": 2,
@@ -35,15 +35,6 @@
 			"PropertyInspectorPath": "ui/inspector.html",
 			"Controllers": ["Keypad"],
 			"States": [{ "Image": "imgs/actions/endstream/key", "TitleAlignment": "bottom" }]
-		},
-		{
-			"Name": "Bleep",
-			"UUID": "com.muxshed.studio.bleep",
-			"Icon": "imgs/actions/bleep/icon",
-			"Tooltip": "Trigger a broadcast-delay bleep",
-			"PropertyInspectorPath": "ui/inspector.html",
-			"Controllers": ["Keypad"],
-			"States": [{ "Image": "imgs/actions/bleep/key", "TitleAlignment": "bottom" }]
 		},
 		{
 			"Name": "Record",

@@ -7,7 +7,6 @@ An [Elgato Stream Deck](https://www.elgato.com/stream-deck) plugin for the self-
 
 - **Go Live** — start streaming
 - **End Stream** — stop streaming
-- **Bleep** — trigger a broadcast-delay bleep
 - **Record** — toggle recording
 
 ## Setup
